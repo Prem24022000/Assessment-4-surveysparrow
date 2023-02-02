@@ -1,0 +1,36 @@
+.scroll-indicator {
+  height: 38px;
+  width: 3px;
+  // background-color: red;
+  position: fixed;
+  z-index: 1;
+  right: 62px;
+
+  top: 250px;
+
+  a {
+    height: 100%;
+    width: 100%;
+    background: #ffffff;
+    opacity: 0.5;
+    display: inline-block;
+    margin-top: -5.9px;
+    position: relative;
+    transition: all 0.5s;
+  }
+
+  a::before {
+    content: attr(data-section);
+    position: absolute;
+    left: -60px;
+  }
+
+  .scroll-start::before {
+    left: -80px;
+  }
+
+  a.active {
+    background: white;
+    opacity: 1;
+  }
+}

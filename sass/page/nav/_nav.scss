@@ -1,0 +1,29 @@
+.nav {
+  //   margin-top: 60px;
+  padding-top: 45px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &--mid-lists {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      li {
+        margin: 0 20px;
+      }
+    }
+
+    &--last-lists {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        margin: 0 5px;
+      }
+    }
+  }
+}

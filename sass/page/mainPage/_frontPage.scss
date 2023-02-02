@@ -1,0 +1,72 @@
+.start__page {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  height: 100vh;
+  //   overflow: hidden;
+
+  &__container {
+    background-color: linear-gradient(
+      330.24deg,
+      rgba(11, 29, 38, 0) 31.06%,
+      #0b1d26 108.93%
+    );
+
+    &--content-top.top {
+      position: initial;
+    }
+
+    z-index: 1;
+
+    img {
+      width: 100%;
+    }
+
+    .cloud {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      left: 0;
+      z-index: -1;
+    }
+
+    .mountain {
+      position: absolute;
+      top: 375px;
+      width: 100%;
+      left: 0;
+    }
+
+    .human {
+      position: absolute;
+      top: 600px;
+      width: 100%;
+      left: 0;
+    }
+
+    &--content {
+      position: absolute;
+      top: 30%;
+      left: 25%;
+
+      h1 {
+        width: 950px;
+        font-size: 70px;
+        font-family: sans-serif;
+        font-weight: 600;
+      }
+
+      &-scroll {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        img {
+          width: 20px;
+
+          transform: rotate(90deg);
+          color: white;
+        }
+      }
+    }
+  }
+}
