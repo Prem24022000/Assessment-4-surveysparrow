@@ -1,3 +1,13 @@
+@keyframes upDown {
+  from {
+    transform: translateY(8px) rotate(90deg);
+  }
+
+  to {
+    transform: translateY(0) rotate(90deg);
+  }
+}
+
 .start__page {
   position: absolute;
   top: 0;
@@ -63,8 +73,13 @@
         img {
           width: 20px;
 
-          transform: rotate(90deg);
           color: white;
+
+          transform: rotate(90deg);
+          animation-name: upDown;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate-reverse;
         }
       }
     }
