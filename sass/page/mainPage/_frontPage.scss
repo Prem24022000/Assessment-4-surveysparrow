@@ -1,10 +1,10 @@
 @keyframes upDown {
   from {
-    transform: translateY(8px) rotate(90deg);
+    transform: translateY(8px);
   }
 
   to {
-    transform: translateY(0) rotate(90deg);
+    transform: translateY(0);
   }
 }
 

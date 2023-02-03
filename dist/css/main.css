@@ -16,6 +16,7 @@ a {
   color: white;
   font-size: 18px;
   text-decoration: none;
+  font-weight: 700;
 }
 
 .number {
@@ -26,8 +27,8 @@ a {
 
 .right-header {
   position: absolute;
-  top: -10px;
-  right: 360px;
+  top: 10px;
+  right: 435px;
 }
 
 .hero__page__container--right--content p {
@@ -78,32 +79,37 @@ a {
   align-items: center;
 }
 .nav__container--mid-lists li {
-  margin: 0 20px;
+  margin: 0 15px;
+}
+.nav__container--mid-lists li a {
+  font-size: 13px;
 }
 .nav__container--last-lists {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 .nav__container--last-lists li {
-  margin: 0 5px;
+  margin: 0 3px;
+}
+.nav__container--last-lists li a {
+  font-size: 13px;
 }
 
 @-webkit-keyframes upDown {
   from {
-    transform: translateY(8px) rotate(90deg);
+    transform: translateY(8px);
   }
   to {
-    transform: translateY(0) rotate(90deg);
+    transform: translateY(0);
   }
 }
 
 @keyframes upDown {
   from {
-    transform: translateY(8px) rotate(90deg);
+    transform: translateY(8px);
   }
   to {
-    transform: translateY(0) rotate(90deg);
+    transform: translateY(0);
   }
 }
 .start__page {
@@ -179,11 +185,13 @@ a {
 #second {
   background-color: rgb(11, 29, 38);
   padding-top: 50px;
+  padding-bottom: 200px;
 }
 
 #third {
   background-color: rgb(11, 29, 38);
-  padding: 200px 0;
+  padding-bottom: 200px;
+  padding-top: 0;
 }
 
 @-webkit-keyframes leftRight {
@@ -203,29 +211,32 @@ a {
     transform: translateX(0);
   }
 }
+.hero__page {
+  margin-top: -1px;
+}
 .hero__page__container {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 102px;
   padding-right: 100px;
-  padding-left: 285px;
+  padding-left: 210px;
   position: relative;
 }
 .hero__page__container--left {
-  max-width: 455px;
+  max-width: 470px;
 }
 .hero__page__container--left--content p {
   margin-top: 35px;
   margin-bottom: 32px;
+  font-size: 15px;
 }
 .hero__page__container--left--header {
   position: absolute;
   top: -15px;
-  left: 235px;
+  left: 185px;
 }
-
-.arrow {
+.hero__page .arrow {
   margin-left: 16px;
   -webkit-animation-name: leftRight;
           animation-name: leftRight;
@@ -242,6 +253,9 @@ a {
   padding-bottom: 120px;
 }
 
+.footer__page {
+  margin-top: -1px;
+}
 .footer__page__container {
   display: flex;
   justify-content: space-between;
@@ -269,6 +283,7 @@ a {
 }
 .footer__page__container--right li a {
   font-size: 14px;
+  font-weight: 100;
 }
 
 .media__section {
@@ -280,6 +295,7 @@ a {
 }
 .media__section img {
   margin-left: 20px;
+  transform: rotate(-90deg);
 }
 
 .scroll-indicator {

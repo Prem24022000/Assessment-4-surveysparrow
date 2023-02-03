@@ -5,6 +5,7 @@
 }
 
 .footer__page {
+  margin-top: -1px;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -36,6 +37,7 @@
         margin-bottom: 16px;
         a {
           font-size: 14px;
+          font-weight: 100;
         }
       }
     }
@@ -50,5 +52,6 @@
   left: 20px;
   img {
     margin-left: 20px;
+    transform: rotate(-90deg);
   }
 }

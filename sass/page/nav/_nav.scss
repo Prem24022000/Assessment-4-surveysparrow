@@ -12,17 +12,24 @@
       justify-content: space-between;
       align-items: center;
       li {
-        margin: 0 20px;
+        margin: 0 15px;
+
+        a {
+          font-size: 13px;
+        }
       }
     }
 
     &--last-lists {
       display: flex;
       justify-content: space-between;
-      align-items: center;
 
       li {
-        margin: 0 5px;
+        margin: 0 3px;
+
+        a {
+          font-size: 13px;
+        }
       }
     }
   }
