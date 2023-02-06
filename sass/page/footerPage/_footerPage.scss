@@ -1,11 +1,13 @@
 #footer {
   background-color: rgb(11, 29, 38);
   padding: 0 210px;
+  padding-top: 200px;
   padding-bottom: 120px;
 }
 
 .footer__page {
   margin-top: -1px;
+
   &__container {
     display: flex;
     justify-content: space-between;
@@ -46,7 +48,7 @@
 
 .media__section {
   display: flex;
-  position: fixed;
+  position: absolute;
   transform: rotate(90deg);
   top: 335px;
   left: 20px;
