@@ -92,7 +92,43 @@ a {
 }
 
 @mixin Mobile-M {
-  @media screen and (max-width: 375px) and {
+  @media screen and (max-width: 375px) {
+    @content;
+  }
+}
+
+@mixin Mobile-S {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin Ixr-12Pro {
+  @media screen and (min-width: 390px) and (max-width: 414px) {
+    @content;
+  }
+}
+
+@mixin IPA-SP7 {
+  @media screen and (min-width: 820px) and (max-width: 912px) {
+    @content;
+  }
+}
+
+@mixin IpadMini {
+  @media screen and (width: 768px) {
+    @content;
+  }
+}
+
+@mixin SurfaceDuo {
+  @media screen and (width: 540px) {
+    @content;
+  }
+}
+
+@mixin GFold {
+  @media screen and (width: 280px) {
     @content;
   }
 }

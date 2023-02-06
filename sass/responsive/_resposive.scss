@@ -204,7 +204,7 @@
   }
 
   #first {
-    margin-top: 510px;
+    margin-top: 485px;
   }
 
   .hero__page__container {
@@ -301,6 +301,16 @@
     }
   }
 
+  .hero__page__container {
+    &--left--header {
+      left: 100px;
+    }
+
+    &--right--header.right-header {
+      left: 75px;
+    }
+  }
+
   .footer__page {
     &__container {
       &--left {
@@ -315,5 +325,176 @@
         }
       }
     }
+  }
+}
+
+@include Ixr-12Pro {
+  .start__page {
+    &__container {
+      .top::before {
+        width: 0;
+        height: 0;
+      }
+
+      &--imgs {
+        .mountain {
+          top: 271px;
+          height: 660px;
+          width: 600px;
+        }
+      }
+
+      .human {
+        top: 502px;
+        height: 400px;
+        width: 800px;
+      }
+    }
+  }
+
+  #first {
+    margin-top: 688px;
+  }
+
+  .footer__page {
+    &__container--left {
+      font-size: 15px;
+    }
+  }
+}
+
+@include Mobile-S {
+  .hero__page__container--left--header {
+    left: 60px;
+  }
+
+  .hero__page__container--right--header.right-header {
+    left: 50px;
+  }
+
+  .footer__page__container--left span {
+    font-size: 12px;
+  }
+}
+
+@include IPA-SP7 {
+  #first {
+    background-color: #0b1d26;
+    margin-top: 1070px;
+  }
+
+  .hero__page__container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+
+    &--left--header {
+      top: 105px;
+      left: 45px;
+    }
+
+    &--right--header {
+      top: 50px;
+      right: 160px;
+    }
+  }
+
+  .start__page {
+    &__container {
+      &--imgs {
+        .cloud {
+          height: 600px;
+        }
+
+        .mountain {
+          top: 450px;
+        }
+
+        .human {
+          top: 750px;
+        }
+      }
+    }
+  }
+
+  #third {
+    padding-top: 100px;
+  }
+
+  #footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@include IpadMini {
+  #footer {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@include SurfaceDuo {
+  .start__page {
+    overflow: hidden;
+    &__container {
+      &--content {
+        h1 {
+          max-width: 300px;
+          font-size: 50px;
+        }
+      }
+
+      .cloud {
+        height: 600px;
+        width: 600px;
+      }
+
+      .mountain {
+        height: 600px;
+        width: 600px;
+      }
+
+      .human {
+        height: 400px;
+        width: 800px;
+        top: 500px;
+      }
+    }
+  }
+
+  .hero__page__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  #first {
+    margin-top: 645px;
+  }
+
+  #third {
+    padding-top: 100px;
+  }
+
+  #footer {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 100px;
+  }
+}
+
+@include GFold {
+  .hero__page {
+    img {
+      width: 100%;
+    }
+  }
+
+  #first {
+    margin-top: 470px;
+  }
+
+  .start__page__container--content h1 {
+    max-width: 200px;
   }
 }
