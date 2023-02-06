@@ -382,7 +382,7 @@ a {
     height: 20px;
   }
   #footer {
-    padding: auto 100px 100px 100px;
+    padding: 100px;
   }
   .footer__page__container--right {
     gap: 60px;
@@ -628,8 +628,8 @@ a {
 }
 @media screen and (width: 768px) {
   #footer {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 @media screen and (width: 540px) {
@@ -678,6 +678,9 @@ a {
   }
   .start__page__container--content h1 {
     max-width: 200px;
+  }
+  .footer__page__container--left span {
+    font-size: 10px;
   }
 }
 body {
