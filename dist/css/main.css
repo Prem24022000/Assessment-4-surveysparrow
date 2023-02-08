@@ -97,6 +97,10 @@ a {
   font-size: 13px;
 }
 
+@font-face {
+  font-family: "Chronicle Display";
+  src: url("../../../dist/chronicle-display-cdnfonts/Chronicle Display Semibold.otf");
+}
 @-webkit-keyframes upDown {
   from {
     transform: translateY(8px);
@@ -105,7 +109,6 @@ a {
     transform: translateY(0);
   }
 }
-
 @keyframes upDown {
   from {
     transform: translateY(8px);
@@ -156,7 +159,7 @@ a {
 .start__page__container--content h1 {
   max-width: 690px;
   font-size: 65px;
-  font-family: "Chronicle Display", sans-serif;
+  font-family: "Chronicle Display";
   font-weight: 100;
   margin: auto;
   line-height: 1.2;
