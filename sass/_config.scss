@@ -42,7 +42,7 @@ a {
 }
 
 .top {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 4px;
   font-weight: 600;
   color: #fbd784;
@@ -129,6 +129,12 @@ a {
 
 @mixin GFold {
   @media screen and (width: 280px) {
+    @content;
+  }
+}
+
+@mixin NestHub {
+  @media screen and (width: 1280px) {
     @content;
   }
 }

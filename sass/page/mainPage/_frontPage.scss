@@ -24,6 +24,7 @@
 
     &--content-top.top {
       position: initial;
+      margin-left: 375px;
     }
 
     z-index: 1;
@@ -55,21 +56,33 @@
     }
 
     &--content {
-      position: absolute;
-      top: 30%;
-      left: 25%;
+      // position: absolute;
+      // top: 30%;
+      // left: 25%;
+
+      margin-top: -670px;
 
       h1 {
-        width: 950px;
-        font-size: 70px;
-        font-family: sans-serif;
-        font-weight: 600;
+        max-width: 690px;
+        font-size: 65px;
+        font-family: 'Chronicle Display', sans-serif;
+        font-weight: 100;
+        margin: auto;
+        line-height: 1.2;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
 
       &-scroll {
         display: block;
         position: absolute;
+        margin-left: 375px;
+        // width: 100%;
         z-index: 1;
+        a {
+          font-size: 14px;
+          font-weight: 600;
+        }
         img {
           width: 20px;
 

@@ -7,6 +7,15 @@
   .scroll-indicator {
     right: 620px;
   }
+
+  .start__page__container--content-top.top {
+    // position: initial;
+    margin-left: 405px;
+  }
+
+  .start__page__container--content-scroll {
+    margin-left: 405px;
+  }
 }
 
 @include Laptop {
@@ -18,7 +27,17 @@
 
   .start__page__container--content {
     h1 {
-      max-width: 600px;
+      max-width: 565px;
+    }
+
+    margin-top: -495px;
+
+    &-top.top {
+      margin-left: 230px;
+    }
+
+    &-scroll {
+      margin-left: 230px;
     }
   }
 
@@ -100,6 +119,23 @@
     }
   }
 
+  .start__page__container--content {
+    h1 {
+      max-width: 455px;
+      font-size: 50px;
+    }
+
+    margin-top: -350px;
+
+    &-top.top {
+      margin-left: 160px;
+    }
+
+    &-scroll {
+      margin-left: 160px;
+    }
+  }
+
   #first {
     background-color: #0b1d26;
   }
@@ -152,6 +188,27 @@
 @include Mobile-L {
   .container {
     padding: 0 20px;
+  }
+
+  .start__page__container--content {
+    position: absolute;
+    top: 565px;
+    width: 100%;
+
+    h1 {
+      text-shadow: 1px 1px black;
+      width: 225px;
+    }
+
+    &-top.top {
+      margin-left: 70px;
+      text-shadow: 1px 1px black;
+    }
+
+    &-top.top::before {
+      width: 0;
+      height: 0;
+    }
   }
 
   .nav {
@@ -314,10 +371,20 @@
         font-size: 35px;
       }
 
-      &--content h1 {
-        padding-right: 20px;
-      }
+      // &--content h1 {
+      //   padding-right: 20px;
+      // }
     }
+  }
+
+  .start__page__container--content {
+    h1 {
+      max-width: 195px;
+    }
+  }
+
+  .start__page__container--content-scroll {
+    margin-left: 135px;
   }
 
   .hero__page__container {
@@ -371,6 +438,10 @@
     }
   }
 
+  .start__page__container--content-scroll {
+    margin-left: 150px;
+  }
+
   #first {
     margin-top: 688px;
   }
@@ -391,6 +462,14 @@
     left: 50px;
   }
 
+  .start__page__container--content-top.top {
+    margin-left: 33px;
+  }
+
+  .start__page__container--content-scroll {
+    margin-left: 63px;
+  }
+
   .footer__page__container--left span {
     font-size: 12px;
   }
@@ -400,6 +479,18 @@
   #first {
     background-color: #0b1d26;
     margin-top: 1070px;
+  }
+
+  .start__page__container--content {
+    margin-top: -350px;
+    h1 {
+      text-shadow: 1px 1px black;
+    }
+  }
+
+  .start__page__container--content-scroll {
+    margin-left: 344px;
+    text-shadow: 1px 1px black;
   }
 
   .hero__page__container {
@@ -482,6 +573,26 @@
     }
   }
 
+  .start__page__container--content {
+    margin-top: -200px;
+    h1 {
+      font-size: 40px;
+      text-shadow: 1px 1px black;
+    }
+  }
+
+  .start__page__container--content-top.top {
+    margin-left: 120px;
+  }
+
+  .start__page__container--content-scroll {
+    margin-left: 125px;
+  }
+
+  .media__section {
+    left: -25px;
+  }
+
   .hero__page__container {
     padding-left: 20px;
     padding-right: 20px;
@@ -517,9 +628,27 @@
     max-width: 200px;
   }
 
+  .start__page__container--content-scroll {
+    margin-left: 90px;
+  }
+
   .footer__page__container--left {
     span {
       font-size: 10px;
     }
+  }
+}
+
+@include NestHub {
+  .start__page__container--content {
+    margin-top: -570px;
+  }
+
+  .start__page__container--content-top.top {
+    margin-left: 300px;
+  }
+
+  .start__page__container--content-scroll {
+    margin-left: 300px;
   }
 }
