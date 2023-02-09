@@ -19,7 +19,7 @@ const addActiveClass = (entries, observer) => {
 };
 
 const option = {
-  threshold: 0.4,
+  threshold: 0.8,
 };
 
 const sections = document.querySelectorAll('section');
