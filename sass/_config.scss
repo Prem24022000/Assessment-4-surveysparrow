@@ -4,12 +4,24 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: 'Chronicle Display';
+  src: url('../dist/chronicle-display-cdnfonts/Chronicle\ Display\ Semibold.otf');
+}
+
 .container {
   padding: 0 60px;
 }
 
 ul li {
   list-style: none;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.2;
+  font-family: 'Chronicle Display';
 }
 
 a {
