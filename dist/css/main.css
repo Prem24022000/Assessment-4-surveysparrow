@@ -65,6 +65,7 @@ a {
   color: #fbd784;
   display: flex;
   align-items: center;
+  font-size: 14px;
 }
 
 .nav {
@@ -94,7 +95,7 @@ a {
   margin: 0 3px;
 }
 .nav__container--last-lists li a {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 @font-face {
@@ -192,7 +193,7 @@ a {
 #first {
   margin-top: 900px;
   background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0b1d26 14.38%);
-  padding-bottom: 150px;
+  padding-bottom: 85px;
 }
 
 #second {
@@ -204,7 +205,7 @@ a {
 #third {
   background-color: rgb(11, 29, 38);
   padding-bottom: 0;
-  padding-top: 200px;
+  padding-top: 165px;
 }
 
 @-webkit-keyframes leftRight {
@@ -231,18 +232,24 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 102px;
+  gap: 80px;
   padding-right: 100px;
   padding-left: 210px;
   position: relative;
 }
 .hero__page__container--left {
-  max-width: 470px;
+  max-width: 500px;
 }
 .hero__page__container--left--content p {
   margin-top: 35px;
   margin-bottom: 32px;
   font-size: 15px;
+}
+.hero__page__container--left--content h2 {
+  max-width: 450px;
+}
+.hero__page__container--right--content h2 {
+  max-width: 450px;
 }
 .hero__page__container--left--header {
   position: absolute;
@@ -262,9 +269,9 @@ a {
 
 #footer {
   background-color: rgb(11, 29, 38);
-  padding: 0 210px;
-  padding-top: 200px;
-  padding-bottom: 120px;
+  padding: 0 170px;
+  padding-top: 150px;
+  padding-bottom: 60px;
 }
 
 .footer__page {
@@ -277,18 +284,19 @@ a {
 .footer__page__container--left p {
   margin-top: 18px;
   max-width: 250px;
-  margin-bottom: 120px;
+  margin-bottom: 100px;
   line-height: 1.6;
 }
 .footer__page__container--left span {
   color: rgba(255, 255, 255, 0.5);
+  font-weight: 100;
 }
 .footer__page__container--right {
   display: flex;
-  gap: 130px;
+  gap: 158px;
 }
 .footer__page__container--right h4 {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   font-size: 16px;
   color: #fbd784;
 }
@@ -305,7 +313,7 @@ a {
   position: absolute;
   transform: rotate(90deg);
   top: 335px;
-  left: 20px;
+  left: -5px;
 }
 .media__section img {
   margin-left: 20px;
@@ -442,6 +450,9 @@ a {
   }
   #second .hero__page__container--left {
     order: 1;
+  }
+  #third {
+    padding-top: 50px;
   }
   .hero__page {
     padding-top: 100px;
@@ -813,6 +824,14 @@ a {
     margin-left: 300px;
   }
 }
+@font-face {
+  font-family: "Gilroy-Bold", sans-serif;
+  src: url("../dist/gilroy/Gilroy-Regular.ttf");
+}
+@font-face {
+  font-family: "Chronicle Display";
+  src: url("../dist/chronicle-display-cdnfonts/Chronicle Display Semibold.otf");
+}
 body {
   color: white;
   font-family: "Gilroy-Bold", sans-serif;
@@ -831,6 +850,7 @@ h2 {
   font-size: 50px;
   font-weight: 500;
   line-height: 1.2;
+  font-family: "Chronicle Display";
 }
 
 p {

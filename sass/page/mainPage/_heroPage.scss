@@ -13,13 +13,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 102px;
+    gap: 80px;
     padding-right: 100px;
     padding-left: 210px;
     position: relative;
 
     &--left {
-      max-width: 470px;
+      max-width: 500px;
 
       &--content {
         p {
@@ -27,6 +27,16 @@
           margin-bottom: 32px;
           font-size: 15px;
         }
+
+        h2 {
+          max-width: 450px;
+        }
+      }
+    }
+
+    &--right--content {
+      h2 {
+        max-width: 450px;
       }
     }
 

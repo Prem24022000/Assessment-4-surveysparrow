@@ -9,6 +9,16 @@
 @import './page/mainPage/scroll';
 @import './responsive/resposive';
 
+@font-face {
+  font-family: 'Gilroy-Bold', sans-serif;
+  src: url('../dist/gilroy/Gilroy-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Chronicle Display';
+  src: url('../dist/chronicle-display-cdnfonts/Chronicle\ Display\ Semibold.otf');
+}
+
 body {
   color: white;
   font-family: 'Gilroy-Bold', sans-serif;
@@ -27,6 +37,7 @@ h2 {
   font-size: 50px;
   font-weight: 500;
   line-height: 1.2;
+  font-family: 'Chronicle Display';
 }
 
 p {
