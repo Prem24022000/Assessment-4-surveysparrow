@@ -19,15 +19,37 @@ const addActiveClass = (entries, observer) => {
 };
 
 const option = {
-  threshold: 0.8,
+  threshold: 0.2,
 };
+
+const checkInnerWidth = () => {
+  if (window.innerWidth <= 768) {
+    option.threshold = 0.2;
+  } else {
+    option.threshold = 0.8;
+  }
+
+  return option;
+};
+
+const addingIntersectionObserver = () => {
+  const observer = new IntersectionObserver(addActiveClass, option);
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+};
+
+window.addEventListener('resize', () => {
+  checkInnerWidth();
+  addingIntersectionObserver();
+});
+
+window.addEventListener('load', () => {
+  checkInnerWidth();
+  addingIntersectionObserver();
+});
 
 const sections = document.querySelectorAll('section');
 
-const observer = new IntersectionObserver(addActiveClass, option);
-
-// console.log(section);
-
-sections.forEach((section) => {
-  observer.observe(section);
-});
+addingIntersectionObserver();
