@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Chronicle Display";
-  src: url("../dist/chronicle-display-cdnfonts/Chronicle Display Semibold.otf");
+  src: url("../ChronicleDisp-XLight.otf") format("opentype");
 }
 .container {
   padding: 0 60px;
@@ -109,10 +109,6 @@ a {
   font-size: 12px;
 }
 
-@font-face {
-  font-family: "Chronicle Display";
-  src: url("../../../dist/chronicle-display-cdnfonts/Chronicle Display Semibold.otf");
-}
 @keyframes upDown {
   from {
     transform: translateY(8px);
